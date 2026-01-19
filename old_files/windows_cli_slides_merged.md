@@ -1,7 +1,11 @@
 ---
 marp: true
+theme: gaia
+size: 16:9
+paginate: true
+lang: ko-KR
+footer: Taehyun Kim ( thkim@legacylab.pro )
 ---
-
 
 # 프로그래밍 입문  
 ## Windows 개발환경 & Command Line 기초

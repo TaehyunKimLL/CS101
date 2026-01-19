@@ -1,5 +1,10 @@
-﻿---
+---
 marp: true
+theme: gaia
+size: 16:9
+paginate: true
+lang: ko-KR
+footer: Taehyun Kim ( thkim@legacylab.pro )
 ---
 
 # 학습자용 실습 워크시트
