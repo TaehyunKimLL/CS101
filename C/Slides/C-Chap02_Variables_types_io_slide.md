@@ -19,10 +19,11 @@ footer: Taehyun Kim ( thkim@legacylab.pro )
 ## 진행 순서
 1. 변수와 식별자 규칙
 2. 기본 자료형과 리터럴
-3. 형 변환
-4. 출력: `printf`
-5. 입력: `scanf`
-6. 실습과 체크포인트
+3. 문자와 문자열
+4. 형 변환
+5. 출력: `printf`
+6. 입력: `scanf`
+7. 실습과 체크포인트
 
 ---
 
@@ -143,172 +144,6 @@ long double ld = 3.14L;
 ```c
 double a = 1e3;   // 1000
 double b = 2.5e-4; // 0.00025
-```
-
----
-
-## 8진수/16진수와 비트 표현
-- 8진수 1자리는 3비트와 1:1 대응
-- 16진수 1자리는 4비트와 1:1 대응
-
-```c
-unsigned int x = 0xAF; // 0b1010_1111
-unsigned int y = 017;  // 0b001_111
-```
-
----
-
-## 비트 연산자 기본
-- `&` AND, `|` OR, `^` XOR, `~` NOT
-- `<<` 왼쪽 시프트, `>>` 오른쪽 시프트
-
-```c
-unsigned int x = 0x0F;     // 0000 1111
-unsigned int y = 0x33;     // 0011 0011
-unsigned int z = x & y;    // 0000 0011
-```
-
----
-
-## 비트 마스크 예시
-```c
-unsigned int flags = 0;
-flags |= (1u << 2);   // 3번 비트 켜기
-flags &= ~(1u << 2);  // 3번 비트 끄기
-```
-
----
-
-## 시프트로 2의 거듭제곱 만들기
-```c
-unsigned int p2_0 = 1u << 0; // 1
-unsigned int p2_3 = 1u << 3; // 8
-unsigned int p2_5 = 1u << 5; // 32
-```
-
----
-
-## 2의 보수와 음수 표현
-- 대부분의 시스템에서 정수 음수는 2의 보수 사용
-- 음수 = 비트 반전 + 1
-
-예시 (8비트):
-- +5  = `0000 0101`
-- -5  = `1111 1011`
-
----
-
-## 2의 보수 다이어그램 (8비트, +5 -> -5)
-```
-+5:  0000 0101
-     1111 1010  (bitwise NOT)
-     1111 1011  (+1)
-```
-
----
-
-## 부동 소수점 비트 표기(개념)
-- IEEE 754 표준 사용
-- `sign` + `exponent` + `fraction(=mantissa)`
-
-예시 (float, 32-bit):
-- 1비트 부호 + 8비트 지수 + 23비트 가수
-
----
-
-## 부동 소수점 구조 다이어그램 (float, 32-bit)
-```
-| sign |  exponent (8)  |       fraction (23)       |
-|  1   | 8 bits (bias)  |       23 bits             |
-```
-
----
-
-## 부동 소수점 구조 다이어그램 (double, 64-bit)
-```
-| sign |   exponent (11)   |              fraction (52)              |
-|  1   | 11 bits (bias)    |                52 bits                  |
-```
-
----
-
-## 부동 소수점 비트 표기 주의
-- 0.1 같은 값은 이진으로 무한 반복
-- 저장 시 근사 → 누적 오차 가능
-
-```c
-double x = 0.1;
-printf("%.17f\n", x);
-```
-
----
-
-## 오버플로우 개념
-- 표현 가능한 범위를 넘으면 문제가 발생
-- `unsigned`는 모듈러 연산처럼 감김(wrap)
-- `signed`는 C에서 **정의되지 않음(UB)**
-
----
-
-## unsigned 오버플로우 예시
-```c
-unsigned char x = 255; // 0xFF
-x = x + 1;             // 0으로 감김
-```
-
----
-
-## 실습: 오버플로우 관찰
-요구사항:
-- `unsigned char`에 254, 255, 256을 출력
-- `int`와 `unsigned int`의 최대값도 출력
-
-힌트:
-```c
-#include <limits.h>
-printf("%u\n", UINT_MAX);
-```
-
----
-
-## signed 오버플로우 예시 (주의)
-```c
-int x = 2147483647; // INT_MAX
-x = x + 1;          // 동작이 보장되지 않음
-```
-
-> 컴파일러 최적화에 따라 예측과 다를 수 있음
-
----
-
-## signed ↔ unsigned 캐스트
-- 같은 비트 패턴을 다른 타입으로 해석
-
-```c
-int a = -1;
-unsigned int b = (unsigned int)a; // 보통 모든 비트 1
-```
-
----
-
-## signed → unsigned 결과
-- 비트는 그대로, 해석만 바뀜
-- -1은 보통 `UINT_MAX`로 보임
-
-```c
-int a = -1;
-printf("%u\n", (unsigned int)a); // 4294967295 (32-bit 기준)
-```
-
----
-
-## mixed 연산 주의
-- signed/unsigned가 섞이면 unsigned로 승격되는 경우가 많음
-
-```c
-int a = -1;
-unsigned int b = 1;
-if (a < b) { /* 기대와 다를 수 있음 */ }
 ```
 
 ---
@@ -540,5 +375,4 @@ scanf(" %c", &grade); // 앞에 공백 넣기
 ---
 
 ## 다음 시간 예고
-- 연산자와 표현식
-- 우선순위와 형 변환 심화
+- 비트 연산과 자료형 심화

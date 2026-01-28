@@ -1,4 +1,4 @@
-﻿---
+---
 marp: true
 theme: gaia
 size: 16:9
@@ -7,7 +7,7 @@ lang: ko-KR
 footer: Taehyun Kim ( thkim@legacylab.pro )
 ---
 
-# C 언어 Chapter 5: 반복문 (for, while, do-while)
+# C 언어 Chapter 6: 반복문 (for, while, do-while)
 
 ---
 

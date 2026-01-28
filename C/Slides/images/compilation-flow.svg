@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300">
+  <!-- Title -->
+  <text x="450" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#333">
+    C 프로그램 컴파일 및 실행 흐름
+  </text>
+
+  <!-- Step 1: Source Code -->
+  <rect x="50" y="80" width="140" height="80" rx="8" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+  <text x="120" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">소스 코드</text>
+  <text x="120" y="135" text-anchor="middle" font-family="monospace" font-size="16" fill="#666">hello.c</text>
+  <text x="120" y="155" text-anchor="middle" font-family="monospace" font-size="12" fill="#999">(텍스트 파일)</text>
+
+  <!-- Arrow 1 -->
+  <path d="M 190 120 L 240 120" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="215" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">컴파일</text>
+
+  <!-- Step 2: Compiler -->
+  <rect x="240" y="80" width="140" height="80" rx="8" fill="#FFF3E0" stroke="#F57C00" stroke-width="2"/>
+  <text x="310" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">컴파일러</text>
+  <text x="310" y="135" text-anchor="middle" font-family="monospace" font-size="16" fill="#666">gcc / cl</text>
+  <text x="310" y="155" text-anchor="middle" font-family="monospace" font-size="12" fill="#999">(번역 프로그램)</text>
+
+  <!-- Arrow 2 -->
+  <path d="M 380 120 L 430 120" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="405" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">생성</text>
+
+  <!-- Step 3: Object File -->
+  <rect x="430" y="80" width="140" height="80" rx="8" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2"/>
+  <text x="500" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">목적 파일</text>
+  <text x="500" y="135" text-anchor="middle" font-family="monospace" font-size="16" fill="#666">hello.o</text>
+  <text x="500" y="155" text-anchor="middle" font-family="monospace" font-size="12" fill="#999">(기계어)</text>
+
+  <!-- Arrow 3 -->
+  <path d="M 570 120 L 620 120" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="595" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">링킹</text>
+
+  <!-- Step 4: Executable -->
+  <rect x="620" y="80" width="140" height="80" rx="8" fill="#E8F5E9" stroke="#388E3C" stroke-width="2"/>
+  <text x="690" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">실행 파일</text>
+  <text x="690" y="135" text-anchor="middle" font-family="monospace" font-size="16" fill="#666">hello.exe</text>
+  <text x="690" y="155" text-anchor="middle" font-family="monospace" font-size="12" fill="#999">(완성된 프로그램)</text>
+
+  <!-- Arrow 4 (down and back) -->
+  <path d="M 690 160 L 690 200 L 120 200 L 120 220" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="405" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">실행</text>
+
+  <!-- Step 5: Running Program -->
+  <rect x="50" y="220" width="140" height="60" rx="8" fill="#FFEBEE" stroke="#C62828" stroke-width="2"/>
+  <text x="120" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">실행 중</text>
+  <text x="120" y="270" text-anchor="middle" font-family="monospace" font-size="12" fill="#666">Hello, World!</text>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <polygon points="0 0, 10 5, 0 10" fill="#666"/>
+    </marker>
+  </defs>
+</svg>

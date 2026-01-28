@@ -5,6 +5,6 @@
     "@marp-team/marp-cli": "^3.4.0"
   },
   "scripts": {
-    "build:slides": "powershell -NoProfile -Command \"New-Item -ItemType Directory -Force dist | Out-Null; Get-ChildItem -Filter *.md | ForEach-Object { marp $_.FullName --pdf --output (Join-Path dist ($_.BaseName + '.pdf')) --allow-local-files }\""
+    "build:slides": "node build-slides.js"
   }
 }

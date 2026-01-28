@@ -36,10 +36,15 @@ footer: Taehyun Kim ( thkim@legacylab.pro )
 
 ---
 
+## 개발 환경 구성도
+
+![w:750](images/dev-environment.svg)
+
+---
+
 ## C 프로그램 실행 흐름
-```
-소스(.c) -> 컴파일 -> 실행 파일 -> 실행
-```
+
+![w:850](images/compilation-flow.svg)
 
 ---
 
@@ -137,13 +142,11 @@ Hello, World!
 - 빌드 결과는 `build/` (선택)
 - 프로젝트마다 폴더 분리
 
-예시:
-```
-Chap01/
-  src/
-    hello.c
-  build/
-```
+---
+
+## 프로젝트 폴더 구조
+
+![w:550](images/project-structure.svg)
 
 ---
 

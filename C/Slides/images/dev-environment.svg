@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#333">
+    C 개발 환경 구성 요소
+  </text>
+
+  <!-- Central Box: Development Environment -->
+  <rect x="250" y="60" width="300" height="280" rx="10" fill="#F5F5F5" stroke="#666" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="400" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#666">개발 환경</text>
+
+  <!-- Component 1: Editor/IDE -->
+  <rect x="280" y="110" width="240" height="50" rx="6" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+  <text x="400" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">편집기 / IDE</text>
+  <text x="400" y="152" text-anchor="middle" font-family="monospace" font-size="12" fill="#666">VS Code, CLion, Vim</text>
+
+  <!-- Component 2: Compiler -->
+  <rect x="280" y="175" width="240" height="50" rx="6" fill="#FFF3E0" stroke="#F57C00" stroke-width="2"/>
+  <text x="400" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">컴파일러</text>
+  <text x="400" y="217" text-anchor="middle" font-family="monospace" font-size="12" fill="#666">GCC, Clang, MSVC</text>
+
+  <!-- Component 3: Build Tools -->
+  <rect x="280" y="240" width="240" height="50" rx="6" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2"/>
+  <text x="400" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">빌드 도구</text>
+  <text x="400" y="282" text-anchor="middle" font-family="monospace" font-size="12" fill="#666">CMake, Make</text>
+
+  <!-- Component 4: Terminal/Shell -->
+  <rect x="280" y="305" width="240" height="50" rx="6" fill="#E8F5E9" stroke="#388E3C" stroke-width="2"/>
+  <text x="400" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">터미널 / 셸</text>
+  <text x="400" y="347" text-anchor="middle" font-family="monospace" font-size="12" fill="#666">Bash, PowerShell, CMD</text>
+
+  <!-- Side annotations -->
+  <text x="570" y="135" font-family="Arial, sans-serif" font-size="12" fill="#999">코드 작성</text>
+  <text x="570" y="200" font-family="Arial, sans-serif" font-size="12" fill="#999">번역</text>
+  <text x="570" y="265" font-family="Arial, sans-serif" font-size="12" fill="#999">자동화</text>
+  <text x="570" y="330" font-family="Arial, sans-serif" font-size="12" fill="#999">실행</text>
+
+  <!-- Left side: Input -->
+  <rect x="30" y="180" width="120" height="60" rx="6" fill="#FFEBEE" stroke="#C62828" stroke-width="2"/>
+  <text x="90" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#333">프로그래머</text>
+  <text x="90" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">(당신!)</text>
+
+  <!-- Arrow: Programmer to IDE -->
+  <path d="M 150 210 L 270 135" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Right side: Output -->
+  <rect x="650" y="180" width="120" height="60" rx="6" fill="#FFF9C4" stroke="#F9A825" stroke-width="2"/>
+  <text x="710" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#333">실행 파일</text>
+  <text x="710" y="225" text-anchor="middle" font-family="monospace" font-size="11" fill="#666">program.exe</text>
+
+  <!-- Arrow: Terminal to Output -->
+  <path d="M 530 330 L 650 215" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <polygon points="0 0, 10 5, 0 10" fill="#666"/>
+    </marker>
+  </defs>
+</svg>

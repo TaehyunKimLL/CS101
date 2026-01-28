@@ -7,7 +7,7 @@ lang: ko-KR
 footer: Taehyun Kim ( thkim@legacylab.pro )
 ---
 
-# C 언어 Chapter 3: 연산자와 표현식
+# C 언어 Chapter 4: 연산자와 표현식
 
 ---
 
