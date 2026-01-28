@@ -70,6 +70,12 @@ char grade = 'A';
 
 ---
 
+## 자료형 메모리 구조
+
+![w:750](images/data-types-memory.svg)
+
+---
+
 ## 부동 소수점이란?
 - 소수를 근사값으로 저장하는 방식
 - 아주 큰/작은 값 표현에 유리하지만 오차가 생길 수 있음
@@ -170,10 +176,8 @@ char name[6] = "Alice"; // A l i c e \0
 ---
 
 ## NULL 종료 구조 다이어그램
-```
-Index: | 0 | 1 | 2 | 3 | 4 | 5 |
-Value: |'A'|'l'|'i'|'c'|'e'|'\0'|
-```
+
+![w:650](images/string-null-termination.svg)
 
 ---
 
@@ -249,6 +253,12 @@ double c = a / b;   // 2.0 (정수 나눗셈)
 ```c
 double c = (double)a / b; // 2.5
 ```
+
+---
+
+## 형 변환 우선순위
+
+![w:650](images/type-conversion.svg)
 
 ---
 

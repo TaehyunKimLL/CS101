@@ -53,6 +53,12 @@ unsigned int z = x & y;    // 0000 0011
 
 ---
 
+## 비트 연산자 시각화
+
+![w:650](images/bit-operations.svg)
+
+---
+
 ## 비트 마스크 예시
 ```c
 unsigned int flags = 0;
@@ -68,6 +74,12 @@ unsigned int p2_0 = 1u << 0; // 1
 unsigned int p2_3 = 1u << 3; // 8
 unsigned int p2_5 = 1u << 5; // 32
 ```
+
+---
+
+## 비트 시프트 시각화
+
+![w:650](images/bit-shift.svg)
 
 ---
 
@@ -253,6 +265,12 @@ unsigned int r = (color >> 16) & 0xFF; // 0xFF
 unsigned int g = (color >> 8) & 0xFF;  // 0x88
 unsigned int b = color & 0xFF;         // 0x00
 ```
+
+---
+
+## RGB 색상 비트 분해
+
+![w:900](images/rgb-color-bits.svg)
 
 ---
 

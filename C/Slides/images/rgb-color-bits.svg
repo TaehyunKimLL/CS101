@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#333">
+    RGB 색상을 비트로 저장 (0x00FF8800)
+  </text>
+
+  <!-- Full 32-bit representation -->
+  <g id="full-color">
+    <text x="50" y="75" font-family="monospace" font-size="12" fill="#666">unsigned int color:</text>
+
+    <!-- Byte 3 (unused) -->
+    <g id="byte3">
+      <rect x="50" y="85" width="16" height="30" fill="#EEE" stroke="#999" stroke-width="1"/>
+      <text x="58" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#999">0</text>
+      <rect x="68" y="85" width="16" height="30" fill="#EEE" stroke="#999" stroke-width="1"/>
+      <text x="76" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#999">0</text>
+      <rect x="86" y="85" width="16" height="30" fill="#EEE" stroke="#999" stroke-width="1"/>
+      <text x="94" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#999">0</text>
+      <rect x="104" y="85" width="16" height="30" fill="#EEE" stroke="#999" stroke-width="1"/>
+      <text x="112" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#999">0</text>
+      <rect x="122" y="85" width="16" height="30" fill="#EEE" stroke="#999" stroke-width="1"/>
+      <text x="130" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#999">0</text>
+      <rect x="140" y="85" width="16" height="30" fill="#EEE" stroke="#999" stroke-width="1"/>
+      <text x="148" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#999">0</text>
+      <rect x="158" y="85" width="16" height="30" fill="#EEE" stroke="#999" stroke-width="1"/>
+      <text x="166" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#999">0</text>
+      <rect x="176" y="85" width="16" height="30" fill="#EEE" stroke="#999" stroke-width="1"/>
+      <text x="184" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#999">0</text>
+    </g>
+
+    <!-- Red byte -->
+    <g id="red-byte">
+      <rect x="206" y="85" width="16" height="30" fill="#FFCDD2" stroke="#C62828" stroke-width="2"/>
+      <text x="214" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">1</text>
+      <rect x="224" y="85" width="16" height="30" fill="#FFCDD2" stroke="#C62828" stroke-width="2"/>
+      <text x="232" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">1</text>
+      <rect x="242" y="85" width="16" height="30" fill="#FFCDD2" stroke="#C62828" stroke-width="2"/>
+      <text x="250" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">1</text>
+      <rect x="260" y="85" width="16" height="30" fill="#FFCDD2" stroke="#C62828" stroke-width="2"/>
+      <text x="268" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">1</text>
+      <rect x="278" y="85" width="16" height="30" fill="#FFCDD2" stroke="#C62828" stroke-width="2"/>
+      <text x="286" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">1</text>
+      <rect x="296" y="85" width="16" height="30" fill="#FFCDD2" stroke="#C62828" stroke-width="2"/>
+      <text x="304" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">1</text>
+      <rect x="314" y="85" width="16" height="30" fill="#FFCDD2" stroke="#C62828" stroke-width="2"/>
+      <text x="322" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">1</text>
+      <rect x="332" y="85" width="16" height="30" fill="#FFCDD2" stroke="#C62828" stroke-width="2"/>
+      <text x="340" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">1</text>
+    </g>
+
+    <!-- Green byte -->
+    <g id="green-byte">
+      <rect x="362" y="85" width="16" height="30" fill="#C8E6C9" stroke="#388E3C" stroke-width="2"/>
+      <text x="370" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">1</text>
+      <rect x="380" y="85" width="16" height="30" fill="#C8E6C9" stroke="#388E3C" stroke-width="2"/>
+      <text x="388" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">0</text>
+      <rect x="398" y="85" width="16" height="30" fill="#C8E6C9" stroke="#388E3C" stroke-width="2"/>
+      <text x="406" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">0</text>
+      <rect x="416" y="85" width="16" height="30" fill="#C8E6C9" stroke="#388E3C" stroke-width="2"/>
+      <text x="424" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">0</text>
+      <rect x="434" y="85" width="16" height="30" fill="#C8E6C9" stroke="#388E3C" stroke-width="2"/>
+      <text x="442" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">1</text>
+      <rect x="452" y="85" width="16" height="30" fill="#C8E6C9" stroke="#388E3C" stroke-width="2"/>
+      <text x="460" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">0</text>
+      <rect x="470" y="85" width="16" height="30" fill="#C8E6C9" stroke="#388E3C" stroke-width="2"/>
+      <text x="478" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">0</text>
+      <rect x="488" y="85" width="16" height="30" fill="#C8E6C9" stroke="#388E3C" stroke-width="2"/>
+      <text x="496" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">0</text>
+    </g>
+
+    <!-- Blue byte -->
+    <g id="blue-byte">
+      <rect x="518" y="85" width="16" height="30" fill="#BBDEFB" stroke="#1976D2" stroke-width="2"/>
+      <text x="526" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">0</text>
+      <rect x="536" y="85" width="16" height="30" fill="#BBDEFB" stroke="#1976D2" stroke-width="2"/>
+      <text x="544" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">0</text>
+      <rect x="554" y="85" width="16" height="30" fill="#BBDEFB" stroke="#1976D2" stroke-width="2"/>
+      <text x="562" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">0</text>
+      <rect x="572" y="85" width="16" height="30" fill="#BBDEFB" stroke="#1976D2" stroke-width="2"/>
+      <text x="580" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">0</text>
+      <rect x="590" y="85" width="16" height="30" fill="#BBDEFB" stroke="#1976D2" stroke-width="2"/>
+      <text x="598" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">0</text>
+      <rect x="608" y="85" width="16" height="30" fill="#BBDEFB" stroke="#1976D2" stroke-width="2"/>
+      <text x="616" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">0</text>
+      <rect x="626" y="85" width="16" height="30" fill="#BBDEFB" stroke="#1976D2" stroke-width="2"/>
+      <text x="634" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">0</text>
+      <rect x="644" y="85" width="16" height="30" fill="#BBDEFB" stroke="#1976D2" stroke-width="2"/>
+      <text x="652" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">0</text>
+    </g>
+
+    <!-- Labels -->
+    <text x="269" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C62828">Red (0xFF)</text>
+    <text x="425" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#388E3C">Green (0x88)</text>
+    <text x="581" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1976D2">Blue (0x00)</text>
+  </g>
+
+  <!-- Extraction examples -->
+  <g id="extraction">
+    <rect x="50" y="160" width="700" height="120" rx="6" fill="#F5F5F5" stroke="#CCC" stroke-width="1"/>
+    <text x="400" y="182" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">
+      비트 추출 방법
+    </text>
+
+    <!-- Red extraction -->
+    <text x="80" y="210" font-family="monospace" font-size="11" fill="#C62828" font-weight="bold">Red:</text>
+    <text x="130" y="210" font-family="monospace" font-size="11" fill="#666">(color &gt;&gt; 16) &amp; 0xFF</text>
+    <text x="80" y="225" font-family="Arial, sans-serif" font-size="10" fill="#999">16비트 우측 시프트 → 마지막 8비트만 추출</text>
+
+    <!-- Green extraction -->
+    <text x="80" y="245" font-family="monospace" font-size="11" fill="#388E3C" font-weight="bold">Green:</text>
+    <text x="130" y="245" font-family="monospace" font-size="11" fill="#666">(color &gt;&gt; 8) &amp; 0xFF</text>
+    <text x="80" y="260" font-family="Arial, sans-serif" font-size="10" fill="#999">8비트 우측 시프트 → 마지막 8비트만 추출</text>
+
+    <!-- Blue extraction -->
+    <text x="450" y="210" font-family="monospace" font-size="11" fill="#1976D2" font-weight="bold">Blue:</text>
+    <text x="500" y="210" font-family="monospace" font-size="11" fill="#666">color &amp; 0xFF</text>
+    <text x="450" y="225" font-family="Arial, sans-serif" font-size="10" fill="#999">마지막 8비트만 추출</text>
+
+    <!-- Result -->
+    <text x="450" y="250" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">결과:</text>
+    <rect x="500" y="238" width="50" height="20" fill="#FF8800" stroke="#666" stroke-width="1"/>
+    <text x="560" y="253" font-family="Arial, sans-serif" font-size="10" fill="#666">RGB(255, 136, 0)</text>
+  </g>
+</svg>

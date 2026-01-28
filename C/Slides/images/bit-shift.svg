@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 300">
+  <!-- Title -->
+  <text x="350" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#333">
+    비트 시프트 연산
+  </text>
+
+  <!-- Left Shift -->
+  <g id="left-shift">
+    <text x="100" y="70" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">좌측 시프트 (&lt;&lt;)</text>
+
+    <!-- Original -->
+    <text x="50" y="95" font-family="monospace" font-size="11" fill="#666">원본:</text>
+    <rect x="100" y="82" width="24" height="24" fill="#E3F2FD" stroke="#1976D2" stroke-width="1"/>
+    <text x="112" y="99" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">0</text>
+    <rect x="126" y="82" width="24" height="24" fill="#E3F2FD" stroke="#1976D2" stroke-width="1"/>
+    <text x="138" y="99" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">0</text>
+    <rect x="152" y="82" width="24" height="24" fill="#E3F2FD" stroke="#1976D2" stroke-width="1"/>
+    <text x="164" y="99" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">0</text>
+    <rect x="178" y="82" width="24" height="24" fill="#E3F2FD" stroke="#1976D2" stroke-width="1"/>
+    <text x="190" y="99" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">0</text>
+    <rect x="204" y="82" width="24" height="24" fill="#FFE082" stroke="#F57C00" stroke-width="1"/>
+    <text x="216" y="99" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">1</text>
+    <rect x="230" y="82" width="24" height="24" fill="#E3F2FD" stroke="#1976D2" stroke-width="1"/>
+    <text x="242" y="99" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">0</text>
+    <rect x="256" y="82" width="24" height="24" fill="#FFE082" stroke="#F57C00" stroke-width="1"/>
+    <text x="268" y="99" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">1</text>
+    <rect x="282" y="82" width="24" height="24" fill="#FFE082" stroke="#F57C00" stroke-width="1"/>
+    <text x="294" y="99" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">1</text>
+    <text x="320" y="99" font-family="Arial, sans-serif" font-size="11" fill="#666">= 23</text>
+
+    <!-- Arrow -->
+    <path d="M 190 115 L 190 135" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <text x="210" y="128" font-family="monospace" font-size="11" fill="#666">&lt;&lt; 2</text>
+
+    <!-- Result -->
+    <text x="50" y="155" font-family="monospace" font-size="11" fill="#666">결과:</text>
+    <rect x="100" y="142" width="24" height="24" fill="#E3F2FD" stroke="#1976D2" stroke-width="1"/>
+    <text x="112" y="159" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">0</text>
+    <rect x="126" y="142" width="24" height="24" fill="#E3F2FD" stroke="#1976D2" stroke-width="1"/>
+    <text x="138" y="159" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">0</text>
+    <rect x="152" y="142" width="24" height="24" fill="#FFE082" stroke="#F57C00" stroke-width="1"/>
+    <text x="164" y="159" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">1</text>
+    <rect x="178" y="142" width="24" height="24" fill="#E3F2FD" stroke="#1976D2" stroke-width="1"/>
+    <text x="190" y="159" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">0</text>
+    <rect x="204" y="142" width="24" height="24" fill="#FFE082" stroke="#F57C00" stroke-width="1"/>
+    <text x="216" y="159" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">1</text>
+    <rect x="230" y="142" width="24" height="24" fill="#FFE082" stroke="#F57C00" stroke-width="1"/>
+    <text x="242" y="159" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">1</text>
+    <rect x="256" y="142" width="24" height="24" fill="#C8E6C9" stroke="#388E3C" stroke-width="2"/>
+    <text x="268" y="159" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#333">0</text>
+    <rect x="282" y="142" width="24" height="24" fill="#C8E6C9" stroke="#388E3C" stroke-width="2"/>
+    <text x="294" y="159" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#333">0</text>
+    <text x="320" y="159" font-family="Arial, sans-serif" font-size="11" fill="#666">= 92</text>
+
+    <text x="190" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#999">오른쪽에 0 추가 (×4)</text>
+  </g>
+
+  <!-- Right Shift -->
+  <g id="right-shift">
+    <text x="450" y="70" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">우측 시프트 (&gt;&gt;)</text>
+
+    <!-- Original -->
+    <text x="400" y="95" font-family="monospace" font-size="11" fill="#666">원본:</text>
+    <rect x="450" y="82" width="24" height="24" fill="#E3F2FD" stroke="#1976D2" stroke-width="1"/>
+    <text x="462" y="99" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">0</text>
+    <rect x="476" y="82" width="24" height="24" fill="#E3F2FD" stroke="#1976D2" stroke-width="1"/>
+    <text x="488" y="99" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">0</text>
+    <rect x="502" y="82" width="24" height="24" fill="#E3F2FD" stroke="#1976D2" stroke-width="1"/>
+    <text x="514" y="99" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">0</text>
+    <rect x="528" y="82" width="24" height="24" fill="#E3F2FD" stroke="#1976D2" stroke-width="1"/>
+    <text x="540" y="99" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">0</text>
+    <rect x="554" y="82" width="24" height="24" fill="#FFE082" stroke="#F57C00" stroke-width="1"/>
+    <text x="566" y="99" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">1</text>
+    <rect x="580" y="82" width="24" height="24" fill="#E3F2FD" stroke="#1976D2" stroke-width="1"/>
+    <text x="592" y="99" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">0</text>
+    <rect x="606" y="82" width="24" height="24" fill="#FFE082" stroke="#F57C00" stroke-width="1"/>
+    <text x="618" y="99" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">1</text>
+    <rect x="632" y="82" width="24" height="24" fill="#FFE082" stroke="#F57C00" stroke-width="1"/>
+    <text x="644" y="99" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">1</text>
+    <text x="665" y="99" font-family="Arial, sans-serif" font-size="11" fill="#666">= 23</text>
+
+    <!-- Arrow -->
+    <path d="M 540" 115 L 540 135" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <text x="560" y="128" font-family="monospace" font-size="11" fill="#666">&gt;&gt; 2</text>
+
+    <!-- Result -->
+    <text x="400" y="155" font-family="monospace" font-size="11" fill="#666">결과:</text>
+    <rect x="450" y="142" width="24" height="24" fill="#C8E6C9" stroke="#388E3C" stroke-width="2"/>
+    <text x="462" y="159" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#333">0</text>
+    <rect x="476" y="142" width="24" height="24" fill="#C8E6C9" stroke="#388E3C" stroke-width="2"/>
+    <text x="488" y="159" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#333">0</text>
+    <rect x="502" y="142" width="24" height="24" fill="#E3F2FD" stroke="#1976D2" stroke-width="1"/>
+    <text x="514" y="159" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">0</text>
+    <rect x="528" y="142" width="24" height="24" fill="#E3F2FD" stroke="#1976D2" stroke-width="1"/>
+    <text x="540" y="159" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">0</text>
+    <rect x="554" y="142" width="24" height="24" fill="#E3F2FD" stroke="#1976D2" stroke-width="1"/>
+    <text x="566" y="159" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">0</text>
+    <rect x="580" y="142" width="24" height="24" fill="#FFE082" stroke="#F57C00" stroke-width="1"/>
+    <text x="592" y="159" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">1</text>
+    <rect x="606" y="142" width="24" height="24" fill="#E3F2FD" stroke="#1976D2" stroke-width="1"/>
+    <text x="618" y="159" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">0</text>
+    <rect x="632" y="142" width="24" height="24" fill="#FFE082" stroke="#F57C00" stroke-width="1"/>
+    <text x="644" y="159" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">1</text>
+    <text x="665" y="159" font-family="Arial, sans-serif" font-size="11" fill="#666">= 5</text>
+
+    <text x="540" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#999">왼쪽에 0 추가 (÷4)</text>
+  </g>
+
+  <!-- Note -->
+  <rect x="50" y="220" width="600" height="60" rx="6" fill="#FFF9C4" stroke="#F9A825" stroke-width="1"/>
+  <text x="350" y="242" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">
+    시프트 연산과 2의 거듭제곱
+  </text>
+  <text x="350" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">
+    좌측 시프트 n칸 = ×2ⁿ  |  우측 시프트 n칸 = ÷2ⁿ
+  </text>
+  <text x="350" y="273" text-anchor="middle" font-family="monospace" font-size="10" fill="#666">
+    1 &lt;&lt; 3 = 8  |  16 &gt;&gt; 2 = 4
+  </text>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <polygon points="0 0, 10 5, 0 10" fill="#666"/>
+    </marker>
+  </defs>
+</svg>

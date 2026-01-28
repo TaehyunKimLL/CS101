@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 350">
+  <!-- Title -->
+  <text x="350" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#333">
+    자동 형 변환 (Implicit Type Conversion)
+  </text>
+
+  <!-- Type hierarchy (bottom to top) -->
+
+  <!-- Level 1: char, short -->
+  <g id="level1">
+    <rect x="150" y="270" width="100" height="50" rx="6" fill="#FFE082" stroke="#F57C00" stroke-width="2"/>
+    <text x="200" y="300" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#333">char</text>
+
+    <rect x="280" y="270" width="100" height="50" rx="6" fill="#FFE082" stroke="#F57C00" stroke-width="2"/>
+    <text x="330" y="300" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#333">short</text>
+  </g>
+
+  <!-- Arrow up -->
+  <path d="M 265 270 L 265 240" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Level 2: int -->
+  <g id="level2">
+    <rect x="215" y="190" width="100" height="50" rx="6" fill="#FFE082" stroke="#F57C00" stroke-width="2"/>
+    <text x="265" y="220" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#333">int</text>
+  </g>
+
+  <!-- Arrow up -->
+  <path d="M 265 190 L 265 160" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Level 3: long -->
+  <g id="level3">
+    <rect x="215" y="110" width="100" height="50" rx="6" fill="#FFE082" stroke="#F57C00" stroke-width="2"/>
+    <text x="265" y="140" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#333">long</text>
+  </g>
+
+  <!-- Arrow up to float -->
+  <path d="M 315 135 L 365 135" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Level 4: float -->
+  <g id="level4">
+    <rect x="365" y="110" width="100" height="50" rx="6" fill="#B3E5FC" stroke="#0288D1" stroke-width="2"/>
+    <text x="415" y="140" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#333">float</text>
+  </g>
+
+  <!-- Arrow up -->
+  <path d="M 415 110 L 415 80" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Level 5: double (top) -->
+  <g id="level5">
+    <rect x="365" y="30" width="100" height="50" rx="6" fill="#B3E5FC" stroke="#0288D1" stroke-width="2"/>
+    <text x="415" y="60" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#333">double</text>
+  </g>
+
+  <!-- Example on the right -->
+  <g id="example">
+    <rect x="520" y="80" width="160" height="220" rx="8" fill="#F5F5F5" stroke="#999" stroke-width="1"/>
+    <text x="600" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">변환 예시</text>
+
+    <text x="530" y="135" font-family="monospace" font-size="12" fill="#333">int a = 5;</text>
+    <text x="530" y="155" font-family="monospace" font-size="12" fill="#333">double b = 2.0;</text>
+    <text x="530" y="180" font-family="monospace" font-size="12" fill="#0288D1">a + b</text>
+    <text x="530" y="195" font-family="Arial, sans-serif" font-size="11" fill="#666">→ a가 double로</text>
+    <text x="530" y="210" font-family="Arial, sans-serif" font-size="11" fill="#666">  자동 변환</text>
+    <text x="530" y="225" font-family="monospace" font-size="12" fill="#0288D1">= 7.0</text>
+
+    <line x1="530" y1="240" x2="670" y2="240" stroke="#CCC" stroke-width="1"/>
+
+    <text x="530" y="260" font-family="monospace" font-size="12" fill="#333">int c = 5 / 2;</text>
+    <text x="530" y="275" font-family="Arial, sans-serif" font-size="11" fill="#C62828">정수 나눗셈</text>
+    <text x="530" y="290" font-family="monospace" font-size="12" fill="#C62828">= 2 (주의!)</text>
+  </g>
+
+  <!-- Labels -->
+  <text x="50" y="140" font-family="Arial, sans-serif" font-size="12" fill="#666">높은</text>
+  <text x="50" y="155" font-family="Arial, sans-serif" font-size="12" fill="#666">정밀도</text>
+  <text x="65" y="170" font-family="Arial, sans-serif" font-size="16" fill="#999">↑</text>
+  <text x="50" y="295" font-family="Arial, sans-serif" font-size="12" fill="#666">낮은</text>
+  <text x="50" y="310" font-family="Arial, sans-serif" font-size="12" fill="#666">정밀도</text>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <polygon points="0 0, 10 5, 0 10" fill="#666"/>
+    </marker>
+  </defs>
+</svg>

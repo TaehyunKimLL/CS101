@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 250">
+  <!-- Title -->
+  <text x="350" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#333">
+    문자열 NULL 종료 구조: "Alice"
+  </text>
+
+  <!-- Array name -->
+  <text x="50" y="80" font-family="monospace" font-size="14" font-weight="bold" fill="#333">char name[6]</text>
+
+  <!-- Indexes -->
+  <text x="130" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">Index:</text>
+  <text x="200" y="80" text-anchor="middle" font-family="monospace" font-size="12" fill="#666">0</text>
+  <text x="270" y="80" text-anchor="middle" font-family="monospace" font-size="12" fill="#666">1</text>
+  <text x="340" y="80" text-anchor="middle" font-family="monospace" font-size="12" fill="#666">2</text>
+  <text x="410" y="80" text-anchor="middle" font-family="monospace" font-size="12" fill="#666">3</text>
+  <text x="480" y="80" text-anchor="middle" font-family="monospace" font-size="12" fill="#666">4</text>
+  <text x="550" y="80" text-anchor="middle" font-family="monospace" font-size="12" fill="#666">5</text>
+
+  <!-- Array cells with characters -->
+  <g id="char-A">
+    <rect x="170" y="100" width="60" height="60" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+    <text x="200" y="140" text-anchor="middle" font-family="monospace" font-size="20" font-weight="bold" fill="#333">'A'</text>
+  </g>
+
+  <g id="char-l">
+    <rect x="240" y="100" width="60" height="60" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+    <text x="270" y="140" text-anchor="middle" font-family="monospace" font-size="20" font-weight="bold" fill="#333">'l'</text>
+  </g>
+
+  <g id="char-i">
+    <rect x="310" y="100" width="60" height="60" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+    <text x="340" y="140" text-anchor="middle" font-family="monospace" font-size="20" font-weight="bold" fill="#333">'i'</text>
+  </g>
+
+  <g id="char-c">
+    <rect x="380" y="100" width="60" height="60" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+    <text x="410" y="140" text-anchor="middle" font-family="monospace" font-size="20" font-weight="bold" fill="#333">'c'</text>
+  </g>
+
+  <g id="char-e">
+    <rect x="450" y="100" width="60" height="60" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+    <text x="480" y="140" text-anchor="middle" font-family="monospace" font-size="20" font-weight="bold" fill="#333">'e'</text>
+  </g>
+
+  <g id="char-null">
+    <rect x="520" y="100" width="60" height="60" fill="#FFEBEE" stroke="#C62828" stroke-width="2"/>
+    <text x="550" y="140" text-anchor="middle" font-family="monospace" font-size="18" font-weight="bold" fill="#C62828">'\0'</text>
+  </g>
+
+  <!-- Labels below -->
+  <text x="130" y="190" font-family="Arial, sans-serif" font-size="12" fill="#666">Value:</text>
+  <text x="200" y="190" text-anchor="middle" font-family="monospace" font-size="12" fill="#666">65</text>
+  <text x="270" y="190" text-anchor="middle" font-family="monospace" font-size="12" fill="#666">108</text>
+  <text x="340" y="190" text-anchor="middle" font-family="monospace" font-size="12" fill="#666">105</text>
+  <text x="410" y="190" text-anchor="middle" font-family="monospace" font-size="12" fill="#666">99</text>
+  <text x="480" y="190" text-anchor="middle" font-family="monospace" font-size="12" fill="#666">101</text>
+  <text x="550" y="190" text-anchor="middle" font-family="monospace" font-size="12" fill="#C62828">0</text>
+
+  <text x="130" y="210" font-family="Arial, sans-serif" font-size="11" fill="#999">(ASCII)</text>
+
+  <!-- Annotation -->
+  <text x="350" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#666">
+    NULL 종료 문자 ('\0')는 문자열의 끝을 표시
+  </text>
+</svg>
