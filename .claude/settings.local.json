@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git mv:*)",
+      "Bash(if [ -f .gitignore ])",
+      "Bash(then cat .gitignore)",
+      "Bash(else echo \"No .gitignore found\")",
+      "Bash(fi)",
+      "Bash(npm run build:slides:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nC 슬라이드 개선: 챕터 분리, 고급 내용 추가, 다이어그램 추가\n\n- Chapter 2를 기본/고급으로 분리\n  - Chap02: 변수, 자료형, 입출력 기본만 유지 \\(544→379줄\\)\n  - 새 Chap03: 비트 연산, 2의 보수, IEEE 754, 오버플로우 분리 \\(313줄\\)\n  \n- 챕터 재번호화 \\(Chap03-11 → Chap04-12\\)\n  - 모든 파일 git mv로 이동\n  - 챕터 번호 및 다음 시간 예고 업데이트\n  - UTF-8 BOM 제거 \\(Chap05-11\\)\n\n- Chapter 11 \\(파일 입출력\\) 대폭 확장 \\(168→420줄\\)\n  - 표준 스트림 \\(stdin/stdout/stderr\\) 설명\n  - 문자 입출력: getchar/putchar, getc/putc, fgetc/fputc\n  - gets vs fgets 보안 비교\n  - sprintf/sscanf 추가\n  - 버퍼링 개념 \\(fflush, setvbuf\\)\n  \n- Chapter 12 \\(Advanced Pointers\\) 완전 재작성 \\(242→450줄\\)\n  - 포인터 배열 vs 배열 포인터 명확한 구분\n  - 2중 포인터 개념 및 활용 \\(main 인자, 동적 할당\\)\n  - 다차원 배열과 포인터 관계\n  - 동적 2D 배열 할당 방법 2가지\n  - 함수 포인터 배열 활용 예제\n  \n- Chapter 1 및 Chapter 3에 교육용 SVG 다이어그램 추가\n  - compilation-flow.svg: 컴파일 및 실행 파이프라인\n  - dev-environment.svg: 개발 환경 구성 요소\n  - project-structure.svg: 프로젝트 폴더 구조\n  - ieee754-float32.svg: 32비트 부동소수점 구조\n  - ieee754-double64.svg: 64비트 부동소수점 구조\n  - twos-complement.svg: 2의 보수 변환 과정\n  \n- 크로스 플랫폼 빌드 시스템\n  - build-slides.js: Node.js 기반 PDF 빌드 스크립트\n  - package.json: PowerShell → Node.js 스크립트로 변경\n  - Common/C/Python 3개 폴더 자동 빌드\n  \n- 문서 업데이트\n  - TABLE_OF_CONTENTS.md: 12개 챕터 반영\n  - todo.md: 챕터 목록 동기화\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit:*)"
+    ]
+  }
+}

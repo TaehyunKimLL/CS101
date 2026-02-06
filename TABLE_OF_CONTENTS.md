@@ -33,6 +33,7 @@
 ## Python Chapter Slides
 - [Python Chapter 1: 개발 환경 확인 및 첫 프로그램 (Hello, World)](Python/Slides/Python-Chap01_Dev_env_first_program_slide.md)
 - [Python Chapter 2: 변수, 자료형, 입출력 (print, input)](Python/Slides/Python-Chap02_Variables_types_io_slide.md)
+- [Python-Chap02_Variables_types_io_worksheet.md](Python/Worksheets/Python-Chap02_Variables_types_io_worksheet.md)
 - [Python Chapter 3: 연산자와 표현식](Python/Slides/Python-Chap03_Operators_expressions_slide.md)
 - [Python Chapter 4: 조건문 (if, elif, else)](Python/Slides/Python-Chap04_Conditionals_slide.md)
 - [Python Chapter 5: 반복문 (for, while)](Python/Slides/Python-Chap05_Loops_slide.md)

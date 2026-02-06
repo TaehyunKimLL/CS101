@@ -9,6 +9,18 @@ footer: Taehyun Kim ( thkim@legacylab.pro )
 
 # C 언어 Chapter 1: 개발 환경 확인 및 첫 프로그램 (Hello, World)
 
+## 두번째
+### 세번째
+---
+페이지 나눔
+- 아이템
+- 두번째
+  - 하나 아래
+     - 그냥 쓰면 대충 다 맞습니다.
+  - IDENT
+- 잘 됩니다.
+
+
 ---
 
 ## 오늘 목표
