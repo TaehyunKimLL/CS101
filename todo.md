@@ -25,6 +25,8 @@
 - Chapter 13 Worksheet -> `C/Worksheets/C-Chap13_Function_call_stack_recursion_worksheet.md`
 - Chapter 14: 함수 포인터 실전, Callback, Dynamic Loading -> `C/Slides/C-Chap14_Callbacks_function_pointer_dynamic_loading_slide.md`
 - Chapter 14 Worksheet -> `C/Worksheets/C-Chap14_Callbacks_function_pointer_dynamic_loading_worksheet.md`
+- Chapter 15: 자료구조 맛보기 - Linked List -> `C/Slides/C-Chap15_Linked_list_basics_slide.md`
+- Chapter 15 Worksheet -> `C/Worksheets/C-Chap15_Linked_list_basics_worksheet.md`
 
 ## Python 기본 학습
 - Chapter 1: 개발 환경 확인 및 첫 프로그램 (Hello, World) -> `Python/Slides/Python-Chap01_Dev_env_first_program_slide.md`

@@ -37,10 +37,12 @@
 - [C 언어 Chapter 12: Advanced Pointers](C/Slides/C-Chap12_Advanced_pointers_slide.md)
 - [C 언어 Chapter 13: 함수 호출, 스택 프레임, 재귀](C/Slides/C-Chap13_Function_call_stack_recursion_slide.md)
 - [C 언어 Chapter 14: 함수 포인터 실전, Callback, Dynamic Loading](C/Slides/C-Chap14_Callbacks_function_pointer_dynamic_loading_slide.md)
+- [C 언어 Chapter 15: 자료구조 맛보기 - Linked List](C/Slides/C-Chap15_Linked_list_basics_slide.md)
 
 ## C Chapter Worksheets
 - [C Chapter 13 Worksheet](C/Worksheets/C-Chap13_Function_call_stack_recursion_worksheet.md)
 - [C Chapter 14 Worksheet](C/Worksheets/C-Chap14_Callbacks_function_pointer_dynamic_loading_worksheet.md)
+- [C Chapter 15 Worksheet](C/Worksheets/C-Chap15_Linked_list_basics_worksheet.md)
 
 ## Python Chapter Slides
 - [Python Chapter 1: 개발 환경 확인 및 첫 프로그램 (Hello, World)](Python/Slides/Python-Chap01_Dev_env_first_program_slide.md)
