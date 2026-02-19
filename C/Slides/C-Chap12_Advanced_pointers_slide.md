@@ -15,7 +15,7 @@ footer: Taehyun Kim ( thkim@legacylab.pro )
 - 2중 포인터와 포인터 배열을 구분한다
 - 다차원 배열과 포인터의 관계를 이해한다
 - 동적 메모리(`malloc/free`)를 이해한다
-- 함수 포인터 배열을 활용한다
+- 함수 포인터를 기초 수준에서 읽고 호출한다
 
 ---
 
@@ -25,7 +25,7 @@ footer: Taehyun Kim ( thkim@legacylab.pro )
 3. 다차원 배열과 포인터
 4. 동적 2D 배열
 5. Stack vs Heap
-6. 함수 포인터 배열
+6. 함수 포인터 맛보기
 7. 실습과 체크포인트
 
 ---
@@ -291,67 +291,33 @@ p = NULL;  // NULL로 설정
 
 ---
 
-## 함수 포인터 복습
+## 함수 포인터 맛보기
 ```c
 int add(int a, int b) { return a + b; }
-int sub(int a, int b) { return a - b; }
-
-int (*fp)(int, int);
-fp = add;
+int (*fp)(int, int) = add;
 printf("%d\n", fp(3, 5)); // 8
 ```
 
----
-
-## 함수 포인터 배열
-```c
-int add(int a, int b) { return a + b; }
-int sub(int a, int b) { return a - b; }
-int mul(int a, int b) { return a * b; }
-
-int (*ops[3])(int, int) = {add, sub, mul};
-
-printf("%d\n", ops[0](5, 3)); // 8
-printf("%d\n", ops[1](5, 3)); // 2
-printf("%d\n", ops[2](5, 3)); // 15
-```
+- "함수의 주소"를 변수에 저장해 호출 가능
+- 시그니처가 정확히 일치해야 안전
 
 ---
 
-## 함수 포인터 배열 활용: 계산기
-```c
-char op;
-int a = 10, b = 5;
-scanf("%c", &op);
-
-switch (op) {
-    case '+': printf("%d\n", ops[0](a, b)); break;
-    case '-': printf("%d\n", ops[1](a, b)); break;
-    case '*': printf("%d\n", ops[2](a, b)); break;
-}
-```
-
----
-
-## typedef로 간단히
+## typedef로 읽기 쉽게
 ```c
 typedef int (*BinOp)(int, int);
 
-BinOp ops[3] = {add, sub, mul};
+int add(int a, int b) { return a + b; }
+BinOp op = add;
+printf("%d\n", op(10, 20));
 ```
 
 ---
 
-## 구조체와 함수 포인터
-```c
-typedef struct {
-    char name[20];
-    int (*calculate)(int, int);
-} Operation;
-
-Operation op = {"Add", add};
-printf("%d\n", op.calculate(3, 5));
-```
+## 왜 지금은 맛보기만 하나?
+- 함수 포인터 실전은 개념이 한 번 더 필요
+- Callback, 함수 테이블, 동적 로딩은 다음 챕터에서 집중
+- 이번 챕터는 "메모리/포인터 기초 체력" 완성에 집중
 
 ---
 
@@ -371,11 +337,11 @@ printf("%d\n", op.calculate(3, 5));
 
 ---
 
-## 실습 3: 함수 포인터 배열 계산기
+## 실습 3: 함수 포인터 1개 호출
 요구사항:
-- 4칙연산 함수 작성
-- 함수 포인터 배열로 구현
-- 연산자 입력 받아 계산
+- `add` 함수와 함수 포인터 선언
+- 함수 포인터를 통해 호출 결과 출력
+- 함수 시그니처가 바뀌면 왜 에러가 나는지 확인
 
 ---
 
@@ -391,6 +357,7 @@ printf("%d\n", op.calculate(3, 5));
 - 2중 포인터의 용도를 설명할 수 있나요?
 - 다차원 배열의 메모리 구조를 이해했나요?
 - 동적 2D 배열 할당/해제를 할 수 있나요?
+- 함수 포인터 선언을 최소 1개 읽고 쓸 수 있나요?
 
 ---
 
@@ -399,4 +366,10 @@ printf("%d\n", op.calculate(3, 5));
 - 2중 포인터는 포인터의 주소를 저장
 - 다차원 배열은 메모리에 연속 저장
 - 동적 메모리는 반드시 해제 필요
-- 함수 포인터 배열로 유연한 설계 가능
+- 함수 포인터는 다음 챕터의 Callback 학습 기반
+
+---
+
+## 다음 시간 예고
+- 함수 호출 스택과 재귀
+- Stack Corruption 개념
