@@ -4,6 +4,21 @@ const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 
+const chromeCandidates = [
+  '/usr/bin/chromium',
+  '/usr/bin/chromium-browser',
+  '/usr/bin/google-chrome',
+  '/usr/bin/microsoft-edge'
+];
+
+if (!process.env.CHROME_PATH) {
+  const detected = chromeCandidates.find(candidate => fs.existsSync(candidate));
+  if (detected) {
+    process.env.CHROME_PATH = detected;
+    console.log(`🔧 CHROME_PATH set to ${detected}`);
+  }
+}
+
 // 빌드할 폴더 설정
 const folders = [
   { source: 'Common/Slides', output: 'dist/Common' },
@@ -12,6 +27,7 @@ const folders = [
 ];
 
 console.log('📚 Building slides to PDF...\n');
+let hasFailure = false;
 
 folders.forEach(({ source, output }) => {
   const sourceDir = path.join(__dirname, source);
@@ -48,10 +64,11 @@ folders.forEach(({ source, output }) => {
       console.log(`   Converting ${file}...`);
       execSync(
         `npx -y @marp-team/marp-cli "${inputPath}" --pdf --output "${outputPath}" --allow-local-files`,
-        { stdio: 'pipe' }
+        { stdio: 'pipe', env: process.env }
       );
       console.log(`   ✓ ${file} -> ${path.basename(outputPath)}`);
     } catch (error) {
+      hasFailure = true;
       console.error(`   ✗ Failed to convert ${file}`);
       console.error(`     ${error.message}`);
     }
@@ -59,5 +76,10 @@ folders.forEach(({ source, output }) => {
 
   console.log(`✅ Completed ${source}\n`);
 });
+
+if (hasFailure) {
+  console.error('⚠️ Build completed with conversion errors.');
+  process.exit(1);
+}
 
 console.log('🎉 All slides built successfully!');
